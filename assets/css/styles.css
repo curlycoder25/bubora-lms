@@ -1402,3 +1402,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid
 .bubora-footer-bottom{border-top:1px solid #e4eee8;display:flex;justify-content:space-between;gap:20px;padding:23px 0;color:#718a7e;font-size:13px}
 @media(max-width:700px){.teacher-voices{padding:65px 0}.teacher-voices-grid{grid-template-columns:1fr}.teacher-voices-card{padding:24px}.bubora-footer-top{flex-direction:column;gap:30px;padding:38px 0}.bubora-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:18px}.bubora-footer-bottom{flex-direction:column;gap:12px}}
 @media(prefers-reduced-motion:reduce){.teacher-voices-card{transition:none}.teacher-voices-card:hover{transform:none}}
+
+/* Horizontal teacher-style example cards — isolated to Bizi secenler */
+.teacher-review-disclosure{font-size:12px!important;color:#6b8277!important;margin-top:12px}
+.teacher-review-window{width:100%;overflow:hidden;padding:12px 0 25px;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+.teacher-review-track{display:flex;width:max-content;animation:teacherReviewMarquee 48s linear infinite}
+.teacher-review-window:hover .teacher-review-track,.teacher-review-window:focus-within .teacher-review-track{animation-play-state:paused}
+.teacher-review-set{display:flex;gap:18px;padding-right:18px}
+.teacher-review-card{flex:0 0 330px;min-height:255px;display:flex;flex-direction:column;background:#fff;border:1px solid #d8ebe0;border-radius:22px;padding:26px;box-shadow:0 12px 35px #063d3110;white-space:normal}
+.teacher-review-quote-mark{font-size:50px;line-height:.8;font-weight:800;color:#078b50}
+.teacher-review-text{font-size:15px;line-height:1.8;color:#385a4b;flex:1;margin:15px 0 24px}
+.teacher-review-person{display:flex;align-items:center;gap:12px}
+.teacher-review-avatar{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:50%;background:#dcf7e8;color:#067747;font-weight:800;font-size:17px}
+.teacher-review-person strong{display:block;font-size:14px;color:#103d32}
+.teacher-review-person small{display:block;font-size:12px;color:#70867b;margin-top:4px}
+@keyframes teacherReviewMarquee{to{transform:translateX(-50%)}}
+@media(max-width:600px){.teacher-review-card{flex-basis:285px;min-height:270px;padding:23px}.teacher-review-track{animation-duration:55s}}
+@media(prefers-reduced-motion:reduce){.teacher-review-track{animation:none}.teacher-review-window{overflow-x:auto;mask-image:none}.teacher-review-set[aria-hidden="true"]{display:none}}
