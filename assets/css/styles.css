@@ -1380,3 +1380,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid
   .nav-cta { display:none; }
   .brand-owl { width:31px; height:31px; }
 }
+/* Bubora footer and teacher voices: isolated additions; existing site styling preserved */
+.teacher-voices{padding:90px 0;background:#f6fbf8}
+.teacher-voices-heading{max-width:730px;margin:0 auto 34px;text-align:center}
+.teacher-voices-heading h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.045em;color:#0a342c;margin:16px 0}
+.teacher-voices-heading p{color:#59786b;line-height:1.8;font-size:16px}
+.teacher-voices-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:970px;margin:auto}
+.teacher-voices-card{background:#fff;border:1px solid #d8ebe0;border-radius:22px;padding:32px;box-shadow:0 12px 35px #063d3110;transition:transform .3s,box-shadow .3s}
+.teacher-voices-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px #063d311b}
+.teacher-voices-symbol{display:grid;place-items:center;background:#e3f8eb;color:#078b50;border-radius:14px;width:48px;height:48px;font-size:25px}
+.teacher-voices-card h3{font-size:21px;line-height:1.4;color:#103d32;margin:20px 0 10px}
+.teacher-voices-card p{color:#59786b;line-height:1.75}
+.teacher-voices-card a{color:#078b50;font-weight:800;text-decoration:none}
+.footer{padding:0;background:#fff}
+.bubora-footer-top{display:flex;justify-content:space-between;align-items:start;gap:40px;padding:52px 0 40px}
+.bubora-footer-brand .logo{display:inline-flex;align-items:center;gap:10px}
+.bubora-footer-brand p{margin:14px 0 0;color:#718a7e;font-size:14px}
+.bubora-footer-links{display:grid;grid-template-columns:repeat(2,minmax(140px,1fr));gap:16px 36px}
+.bubora-footer-links a,.bubora-footer-bottom a{color:#49695b;text-decoration:none;font-weight:700;font-size:14px}
+.bubora-footer-links a:hover,.bubora-footer-bottom a:hover{color:#078b50}
+.bubora-footer-bottom{border-top:1px solid #e4eee8;display:flex;justify-content:space-between;gap:20px;padding:23px 0;color:#718a7e;font-size:13px}
+@media(max-width:700px){.teacher-voices{padding:65px 0}.teacher-voices-grid{grid-template-columns:1fr}.teacher-voices-card{padding:24px}.bubora-footer-top{flex-direction:column;gap:30px;padding:38px 0}.bubora-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:18px}.bubora-footer-bottom{flex-direction:column;gap:12px}}
+@media(prefers-reduced-motion:reduce){.teacher-voices-card{transition:none}.teacher-voices-card:hover{transform:none}}
